@@ -122,6 +122,35 @@ git commit -m ===> gcmsg
 #### 4. sudo(内置)
 作用:当有时输入语句权限不够时，可按两下`esc`自动补全sudo。
 
+#### 5. zsh-syntax-highlighting
+作用：平常用的ls、cd 等命令输入正确会绿色高亮显示，输入错误会显示其他的颜色。
+
+**安装**
+先进插件目录
+`cd ~/.oh-my-zsh/custom/plugins/`
+克隆项目
+`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+
+在 ~/.zshrc 中配置
+`plugins=(其他的插件 zsh-syntax-highlighting)`
+
+使配置生效:
+`source ~/.zshrc`
+
+#### 6.zsh-autosuggestions
+作用：会给出建议的命令（灰色部分）按键盘 → 补全
+
+**安装**
+先进插件目录
+`cd ~/.oh-my-zsh/custom/plugins/`
+克隆项目
+`git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+
+在 ~/.zshrc 中配置
+`plugins=(其他的插件 zsh-autosuggestions)`
+
+使配置生效:
+`source ~/.zshrc`
 
 
 
